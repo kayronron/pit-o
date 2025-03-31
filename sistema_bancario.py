@@ -3,6 +3,8 @@
 #print("Depositar")
 #print("Sacar")
 
+from datetime import datetime
+
 saldo = 0
 limite = 500
 numero_saques = 0
@@ -52,4 +54,12 @@ def saque(saque,saldo):
             saldo -= saque
             numero_saques += 1
             
-        return saldo        
+        return saldo     
+
+
+def extrato (saldo)
+    hora = datetime.now() 
+    horaatual = hora.strftime('%d/%m/%y/ %H:%M')
+    print('==========Extrato==========')
+    print(f'{horaatual} \nSaldo disponível/:{saldo}')
+    print('\n==========Extrato==========')
