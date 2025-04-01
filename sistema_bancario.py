@@ -66,3 +66,7 @@ def extrato (saldo):
     print('=============Extrato=============')
     print(f'{horaatual} \nSaldo disponível:{saldo}' )
     print('\n=============Extrato=============')
+
+def sair():
+
+    print('**********Encerrando o sistema**********')
