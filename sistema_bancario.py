@@ -68,5 +68,18 @@ def extrato (saldo):
     print('\n=============Extrato=============')
 
 def sair():
-
     print('**********Encerrando o sistema**********')
+def novo_usuario(usuário):
+    cpf = int(input('Digite seu CPF (Somente números);'))
+    usuario = filtrar_usuario(cpf,usuarios)
+    
+    if usuario:
+        print('Usuário já cadastrado na base de dados!')
+        return
+
+    nome = str('Escreva seu nome completo :')
+    data_nascimento = input('Informe a data de nascimento(dd--mm--aa):')
+    endereço = input('Informe seu endereço (Rua, Número, CEP, Bairro e Cidade)')
+
+    usuarios.append(f'nome:{nome}, data de nascimento:{data_nascimento}, endereço:{endereço}')
+    print('Cadastro realizado com sucesso!')
