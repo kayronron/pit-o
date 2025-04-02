@@ -83,3 +83,9 @@ def novo_usuario(usuário):
 
     usuarios.append(f'nome:{nome}, data de nascimento:{data_nascimento}, endereço:{endereço}')
     print('Cadastro realizado com sucesso!')
+
+    def filtrar_usuario (cpf,usuarios):
+
+        usuarios_filtrados = [usuarrio for usuario in usuarios if usuarios
+        ['cpf'] ==cpf]
+        return usuarios_filtrados[0] if usuarios_filtrados else none
